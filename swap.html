@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let a=5;
+    // let b=10;
+    // swap(a,b);
+    // document.write("Sau hoan vi trong ngoai: "+a+" - "+b);
+    // function swap(a,b){
+    //     let temp=a;
+    //     a=b;
+    //     b=temp;
+    //     document.write("Sau hoan vi trong ham: "+a+ "-"+b)
+    // }
+    let arr=new Array(5,10);
+    document.write("Truoc khi hoan vi: "+arr);
+    swap(arr);
+    document.write("Sau khi hoan vi: "+arr);
+
+    function swap(arr) {
+        let temp=arr[0];
+        arr[0]=arr[1];
+        arr[1]=temp;
+        
+    }
+</script>
+
+</body>
+</html>

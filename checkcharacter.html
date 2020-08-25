@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // function isNumeric(char) {
+    //     let string = "0123456789";
+    //     if(string.indexOf(char)>=0)
+    //         return false;
+    //     return true;
+    // }
+
+
+    // function isNumeric(str) {
+    //     let string = "0123456789";
+    //     for(i=0;i<str.length;i++){
+    //         if(string.indexOf(str[i])<0){
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    function checkSpecialChar(username) {
+        let spe="^&*()%$#@!~";
+        for(let i=0;i<username.length;i++){
+            if(spe.indexOf(username[i])>=0)
+                return false;
+        }
+        return true;
+    }
+    if(checkSpecialChar("ltchat010"))
+        alert("Username hop le");
+    else
+        alert("Username khong hop le");
+
+
+    // str="content";
+    // let arr=Array.from(str);
+    // document.write(arr);
+    // arr.push('s');
+    // //str.push('s');
+    // document.write(arr);
+</script>
+</body>
+</html>
